@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Login Secure Storage</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Usuario</ion-label>
+      <ion-input clearInput type="text" value="" [(ngModel)]="username"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Senha</ion-label>
+      <ion-input clearInput type="password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+
+    <div padding>
+      <button ion-button block outline (click)="clickLogin()">Entrar</button>
+    </div>
+</ion-list>
+</ion-content>
